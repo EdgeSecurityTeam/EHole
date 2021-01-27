@@ -29,7 +29,7 @@ Options:
   -ftime string
         fofa timeout (default "10")
   -h    this help
-  -j string
+  -json string
         out json
   -l string
         Probe based on local file
@@ -58,7 +58,7 @@ EHole -f 192.168.1.1/24  //支持单IP或IP段
 **3.结果输出：**
 
 ```bash
-EHole -l url.txt -j export.json  //结果输出至export.json文件
+EHole -l url.txt -json export.json  //结果输出至export.json文件
 ```
 
 ### [# 00x03] 指纹编写：
