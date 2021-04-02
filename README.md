@@ -15,9 +15,11 @@
 
 EHole是一款对资产中重点系统指纹识别的工具，在红队作战中，信息收集是必不可少的环节，如何才能从大量的资产中提取有用的系统(如OA、VPN、Weblogic...)。EHole旨在帮助红队人员在信息收集期间能够快速从C段、大量杂乱的资产中精准定位到易被攻击的系统，从而实施进一步攻击。
 
+棱角社区指纹更新帖：https://forum.ywhack.com/viewthread.php?tid=115076
+
 ### [# 00x02] 使用：
 
-配合[红队中易被攻击的一些重点系统漏洞整理]食用效果更佳：https://forum.ywhack.com/thread-114777-1-1.html
+配合[红队中易被攻击的一些重点系统漏洞整理]食用效果更佳：https://forum.ywhack.com/bountytips.php?Vulnerability
 
 ```bash
 EHole version: 2.0
