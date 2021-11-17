@@ -126,9 +126,9 @@ func Fingermain(urls []string, thread int, output string) {
 		color.RGBStyleFromString("237,64,35").Println("[error] fingerprint file error!!!")
 		os.Exit(1)
 	}
-	ch := make(chan string, len(urls))
-	result := make(chan Outrestul, len(urls)*2)
-	allresult := make(chan Outrestul, len(urls)*2)
+	ch := make(chan string, len(urls)*10)
+	result := make(chan Outrestul, len(urls)*10)
+	allresult := make(chan Outrestul, len(urls)*10)
 	finpx := GetWebfingerprint()
 	//fmt.Println(finpx)
 	for _, url := range urls {
