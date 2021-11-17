@@ -31,10 +31,12 @@ func Jsjump(str string, url string) []string {
 					} else {
 						str2 := strings.Trim(m[s-1], "/")
 						str2 = strings.ReplaceAll(str2, "../", "/")
-						if str2[:1] == "/" {
-							results = append(results, url+str2)
-						} else {
-							results = append(results, url+"/"+str2)
+						if len(str2) != 0 {
+							if str2[:1] == "/" {
+								results = append(results, url+str2)
+							} else {
+								results = append(results, url+"/"+str2)
+							}
 						}
 					}
 				}
