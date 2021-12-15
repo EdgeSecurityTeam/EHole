@@ -38,21 +38,25 @@ var fingerCmd = &cobra.Command{
 			"			 /____/ https://forum.ywhack.com  By:shihuang\n")
 		if localfile != "" {
 			urls := removeRepeatedElement(source.LocalFile(localfile))
-			finger.Fingermain(urls, thread, output)
+			s := finger.NewScan(urls, thread, output,proxy)
+			s.StartScan()
 			os.Exit(1)
 		}
 		if fofaip != "" {
 			urls := removeRepeatedElement(source.Fofaip(fofaip))
-			finger.Fingermain(urls, thread, output)
+			s := finger.NewScan(urls, thread, output,proxy)
+			s.StartScan()
 			os.Exit(1)
 		}
 		if fofasearche != "" {
 			urls := removeRepeatedElement(source.Fafaall(fofasearche))
-			finger.Fingermain(urls, thread, output)
+			s := finger.NewScan(urls, thread, output,proxy)
+			s.StartScan()
 			os.Exit(1)
 		}
 		if urla != "" {
-			finger.Fingermain([]string{urla}, thread, output)
+			s := finger.NewScan([]string{urla}, thread, output,proxy)
+			s.StartScan()
 			os.Exit(1)
 		}
 	},
@@ -65,6 +69,7 @@ var (
 	urla        string
 	thread      int
 	output      string
+	proxy		string
 )
 
 func init() {
@@ -75,6 +80,7 @@ func init() {
 	fingerCmd.Flags().StringVarP(&urla, "url", "u", "", "识别单个目标。")
 	fingerCmd.Flags().StringVarP(&output, "output", "o", "", "输出所有结果，当前仅支持json和xlsx后缀的文件。")
 	fingerCmd.Flags().IntVarP(&thread, "thread", "t", 100, "指纹识别线程大小。")
+	fingerCmd.Flags().StringVarP(&proxy, "proxy", "p", "", "指定访问目标时的代理，支持http代理和socks5，例如：http://127.0.0.1:8080、socks5://127.0.0.1:8080")
 }
 
 func removeRepeatedElement(arr []string) (newArr []string) {

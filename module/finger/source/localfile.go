@@ -21,7 +21,7 @@ func LocalFile(filename string) (urls []string) {
 		if strings.Contains(scanner.Text(), "http") {
 			urls = append(urls, scanner.Text())
 		} else {
-			urls = append(urls, "http://"+scanner.Text())
+			urls = append(urls, "https://"+scanner.Text())
 		}
 	}
 	return

@@ -80,13 +80,24 @@ func getfavicon(httpbody string, turl string) string {
 	return favicohash(faviconpath)
 }
 
-func httprequest(url string, cycle int, chsize int) (*resps, error) {
-	transport := &http.Transport{TLSClientConfig: &tls.Config{InsecureSkipVerify: true}}
+func httprequest(url1 []string,proxy string) (*resps, error) {
+	transport := &http.Transport{
+		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+	}
+	if proxy != ""{
+		proxys := func(_ *http.Request) (*url.URL, error) {
+			return url.Parse(proxy)
+		}
+		transport = &http.Transport{
+			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+			Proxy: proxys,
+		}
+	}
 	client := &http.Client{
 		Timeout:   10 * time.Second,
 		Transport: transport,
 	}
-	req, err := http.NewRequest("GET", url, nil)
+	req, err := http.NewRequest("GET", url1[0], nil)
 	if err != nil {
 		return nil, err
 	}
@@ -122,12 +133,12 @@ func httprequest(url string, cycle int, chsize int) (*resps, error) {
 		}
 	}
 	var jsurl []string
-	if cycle < chsize {
-		jsurl = Jsjump(httpbody, url)
+	if url1[1] == "0" {
+		jsurl = Jsjump(httpbody, url1[0])
 	} else {
 		jsurl = []string{""}
 	}
-	favhash := getfavicon(httpbody, url)
-	s := resps{url, httpbody, resp.Header, server, resp.StatusCode, len(httpbody), title, jsurl, favhash}
+	favhash := getfavicon(httpbody, url1[0])
+	s := resps{url1[0], httpbody, resp.Header, server, resp.StatusCode, len(httpbody), title, jsurl, favhash}
 	return &s, nil
 }

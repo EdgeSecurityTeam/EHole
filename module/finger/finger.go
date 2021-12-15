@@ -1,13 +1,14 @@
 package finger
 
 import (
+	"ehole/module/finger/source"
+	"ehole/module/queue"
 	"encoding/json"
 	"fmt"
+	"github.com/gookit/color"
 	"os"
 	"strings"
-	"time"
-
-	"github.com/gookit/color"
+	"sync"
 )
 
 type Outrestul struct {
@@ -17,6 +18,61 @@ type Outrestul struct {
 	Statuscode int    `json:"statuscode"`
 	Length     int    `json:"length"`
 	Title      string `json:"title"`
+}
+
+type FinScan struct {
+	UrlQueue    *queue.Queue
+	Ch          chan []string
+	Wg          sync.WaitGroup
+	Thread      int
+	Output      string
+	Proxy       string
+	AllResult   []Outrestul
+	FocusResult []Outrestul
+	Finpx       *Packjson
+}
+
+func NewScan(urls []string, thread int, output string, proxy string) *FinScan {
+	s := &FinScan{
+		UrlQueue:    queue.NewQueue(),
+		Ch:          make(chan []string, thread),
+		Wg:          sync.WaitGroup{},
+		Thread:      thread,
+		Output:      output,
+		Proxy:       proxy,
+		AllResult:   []Outrestul{},
+		FocusResult: []Outrestul{},
+	}
+	err := LoadWebfingerprint(source.GetCurrentAbPathByExecutable() + "/finger.json")
+	if err != nil {
+		color.RGBStyleFromString("237,64,35").Println("[error] fingerprint file error!!!")
+		os.Exit(1)
+	}
+	s.Finpx = GetWebfingerprint()
+	for _, url := range urls {
+		s.UrlQueue.Push([]string{url,"0"})
+	}
+	return s
+}
+
+func (s *FinScan)StartScan() {
+	for i := 0; i <= s.Thread; i++ {
+		s.Wg.Add(1)
+		go func() {
+			defer s.Wg.Done()
+			s.fingerScan()
+		}()
+	}
+	s.Wg.Wait()
+	color.RGBStyleFromString("244,211,49").Println("\n重点资产：")
+	for _,aas := range s.FocusResult {
+		fmt.Printf(fmt.Sprintf("[ %s | ", aas.Url))
+		color.RGBStyleFromString("237,64,35").Printf(fmt.Sprintf("%s", aas.Cms))
+		fmt.Printf(fmt.Sprintf(" | %s | %d | %d | %s ]\n", aas.Server, aas.Statuscode, aas.Length, aas.Title))
+	}
+	if s.Output != "" {
+		outfile(s.Output, s.AllResult)
+	}
 }
 
 func MapToJson(param map[string][]string) string {
@@ -36,31 +92,26 @@ func RemoveDuplicatesAndEmpty(a []string) (ret []string) {
 	return
 }
 
-func fingerscan(allresult chan Outrestul, ch chan string, result chan Outrestul, finpx *Packjson) {
-	chsize := len(ch)
-	cycle := 1
-	for len(ch) != 0 {
-		url := <-ch
+func (s *FinScan)fingerScan() {
+	for s.UrlQueue.Len() != 0 {
+		url := s.UrlQueue.Pop().([]string)
 		var data *resps
-		data, err := httprequest(url, cycle, chsize)
+		data, err := httprequest(url, s.Proxy)
 		if err != nil {
-			continue
-		}
-		if data.statuscode == 400 {
-			data, err = httprequest(url, cycle, chsize)
+			url[0] = strings.ReplaceAll(url[0], "https://", "http://")
+			data, err = httprequest(url, s.Proxy)
 			if err != nil {
 				continue
 			}
 		}
-		cycle++
 		for _, jurl := range data.jsurl {
 			if jurl != "" {
-				ch <- jurl
+				s.UrlQueue.Push([]string{jurl, "1"})
 			}
 		}
 		headers := MapToJson(data.header)
 		var cms []string
-		for _, finp := range finpx.Fingerprint {
+		for _, finp := range s.Finpx.Fingerprint {
 			if finp.Location == "body" {
 				if finp.Method == "keyword" {
 					if iskeyword(data.body, finp.Keyword) {
@@ -106,65 +157,14 @@ func fingerscan(allresult chan Outrestul, ch chan string, result chan Outrestul,
 		cms = RemoveDuplicatesAndEmpty(cms)
 		cmss := strings.Join(cms, ",")
 		out := Outrestul{data.url, cmss, data.server, data.statuscode, data.length, data.title}
-		allresult <- out
+		s.AllResult = append(s.AllResult,out)
 		if len(out.Cms) != 0 {
-			s := fmt.Sprintf("[ %s | %s | %s | %d | %d | %s ]", out.Url, out.Cms, out.Server, out.Statuscode, out.Length, out.Title)
-			color.RGBStyleFromString("237,64,35").Println(s)
-			result <- out
+			outstr := fmt.Sprintf("[ %s | %s | %s | %d | %d | %s ]", out.Url, out.Cms, out.Server, out.Statuscode, out.Length, out.Title)
+			color.RGBStyleFromString("237,64,35").Println(outstr)
+			s.FocusResult = append(s.FocusResult,out)
 		} else {
-			s := fmt.Sprintf("[ %s | %s | %s | %d | %d | %s ]", out.Url, out.Cms, out.Server, out.Statuscode, out.Length, out.Title)
-			fmt.Println(s)
+			outstr := fmt.Sprintf("[ %s | %s | %s | %d | %d | %s ]", out.Url, out.Cms, out.Server, out.Statuscode, out.Length, out.Title)
+			fmt.Println(outstr)
 		}
-
-	}
-}
-
-func Fingermain(urls []string, thread int, output string) {
-	err1 := LoadWebfingerprint("./finger.json")
-	if err1 != nil {
-		//log.Println("fingerprint file read error:", err1)
-		color.RGBStyleFromString("237,64,35").Println("[error] fingerprint file error!!!")
-		os.Exit(1)
-	}
-	ch := make(chan string, len(urls))
-	result := make(chan Outrestul, len(urls)*2)
-	allresult := make(chan Outrestul, len(urls)*2)
-	finpx := GetWebfingerprint()
-	//fmt.Println(finpx)
-	for _, url := range urls {
-		ch <- url
-	}
-	for i := 0; i <= thread; i++ {
-		go fingerscan(allresult, ch, result, finpx)
-	}
-	for {
-		//fmt.Println(len(ch))
-		if len(ch) > 0 {
-			time.Sleep(10 * time.Second)
-		} else {
-			time.Sleep(5 * time.Second)
-			if len(ch) == 0 {
-				break
-			} else {
-				continue
-			}
-
-		}
-	}
-	close(ch)
-	color.RGBStyleFromString("244,211,49").Println("\n重点资产：")
-	if len(result) == 0 {
-		close(result)
-	}
-	for aas := range result {
-		fmt.Printf(fmt.Sprintf("[ %s | ", aas.Url))
-		color.RGBStyleFromString("237,64,35").Printf(fmt.Sprintf("%s", aas.Cms))
-		fmt.Printf(fmt.Sprintf(" | %s | %d | %d | %s ]\n", aas.Server, aas.Statuscode, aas.Length, aas.Title))
-		if len(result) == 0 {
-			close(result)
-		}
-	}
-	if output != "" {
-		outfile(output, allresult)
 	}
 }

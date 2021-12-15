@@ -47,18 +47,11 @@ func outxlsx(filename string, msg []Outrestul) {
 	}
 }
 
-func outfile(filename string, allresult chan Outrestul) {
+func outfile(filename string, allresult []Outrestul) {
 	file := strings.Split(filename, ".")
-	var allresults []Outrestul
-	for result := range allresult {
-		allresults = append(allresults, result)
-		if len(allresult) == 0 {
-			close(allresult)
-		}
-	}
 	if len(file) == 2 {
 		if file[1] == "json" {
-			buf, err := json.MarshalIndent(allresults, "", " ")
+			buf, err := json.MarshalIndent(allresult, "", " ")
 			if err != nil {
 				fmt.Println(err.Error())
 				return
@@ -66,7 +59,7 @@ func outfile(filename string, allresult chan Outrestul) {
 			outjson(filename, buf)
 		}
 		if file[1] == "xlsx" {
-			outxlsx(filename, allresults)
+			outxlsx(filename, allresult)
 		}
 	}
 
