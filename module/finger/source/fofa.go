@@ -84,7 +84,7 @@ func GetConfig() Config {
 func fofa_api(keyword string, email string, key string, page int, size int) string {
 	input := []byte(keyword)
 	encodeString := base64.StdEncoding.EncodeToString(input)
-	api_request := fmt.Sprintf("https://fofa.so/api/v1/search/all?email=%s&page=%d&size=%d&key=%s&qbase64=%s&fields=ip,host,title,port,protocol", strings.Trim(email, " "), page, size, strings.Trim(key, " "), encodeString)
+	api_request := fmt.Sprintf("https://fofa.info/api/v1/search/all?email=%s&page=%d&size=%d&key=%s&qbase64=%s&fields=ip,host,title,port,protocol", strings.Trim(email, " "), page, size, strings.Trim(key, " "), encodeString)
 	return api_request
 }
 
