@@ -94,9 +94,10 @@ func RemoveDuplicatesAndEmpty(a []string) (ret []string) {
 
 func (s *FinScan)fingerScan() {
 	for s.UrlQueue.Len() != 0 {
-		url := s.UrlQueue.Pop().([]string)
+		dataface := s.UrlQueue.Pop()
 		switch dataface.(type){
 		case []string:
+			url := dataface.([]string)
 			var data *resps
 			data, err := httprequest(url, s.Proxy)
 			if err != nil {
