@@ -95,76 +95,82 @@ func RemoveDuplicatesAndEmpty(a []string) (ret []string) {
 func (s *FinScan)fingerScan() {
 	for s.UrlQueue.Len() != 0 {
 		url := s.UrlQueue.Pop().([]string)
-		var data *resps
-		data, err := httprequest(url, s.Proxy)
-		if err != nil {
-			url[0] = strings.ReplaceAll(url[0], "https://", "http://")
-			data, err = httprequest(url, s.Proxy)
+		switch dataface.(type){
+		case []string:
+			var data *resps
+			data, err := httprequest(url, s.Proxy)
 			if err != nil {
-				continue
-			}
-		}
-		for _, jurl := range data.jsurl {
-			if jurl != "" {
-				s.UrlQueue.Push([]string{jurl, "1"})
-			}
-		}
-		headers := MapToJson(data.header)
-		var cms []string
-		for _, finp := range s.Finpx.Fingerprint {
-			if finp.Location == "body" {
-				if finp.Method == "keyword" {
-					if iskeyword(data.body, finp.Keyword) {
-						cms = append(cms, finp.Cms)
-					}
-				}
-				if finp.Method == "faviconhash" {
-					if data.favhash == finp.Keyword[0] {
-						cms = append(cms, finp.Cms)
-					}
-				}
-				if finp.Method == "regular" {
-					if isregular(data.body, finp.Keyword) {
-						cms = append(cms, finp.Cms)
-					}
+				url[0] = strings.ReplaceAll(url[0], "https://", "http://")
+				data, err = httprequest(url, s.Proxy)
+				if err != nil {
+					continue
 				}
 			}
-			if finp.Location == "header" {
-				if finp.Method == "keyword" {
-					if iskeyword(headers, finp.Keyword) {
-						cms = append(cms, finp.Cms)
+			for _, jurl := range data.jsurl {
+				if jurl != "" {
+					s.UrlQueue.Push([]string{jurl, "1"})
+				}
+			}
+			headers := MapToJson(data.header)
+			var cms []string
+			for _, finp := range s.Finpx.Fingerprint {
+				if finp.Location == "body" {
+					if finp.Method == "keyword" {
+						if iskeyword(data.body, finp.Keyword) {
+							cms = append(cms, finp.Cms)
+						}
+					}
+					if finp.Method == "faviconhash" {
+						if data.favhash == finp.Keyword[0] {
+							cms = append(cms, finp.Cms)
+						}
+					}
+					if finp.Method == "regular" {
+						if isregular(data.body, finp.Keyword) {
+							cms = append(cms, finp.Cms)
+						}
 					}
 				}
-				if finp.Method == "regular" {
-					if isregular(headers, finp.Keyword) {
-						cms = append(cms, finp.Cms)
+				if finp.Location == "header" {
+					if finp.Method == "keyword" {
+						if iskeyword(headers, finp.Keyword) {
+							cms = append(cms, finp.Cms)
+						}
+					}
+					if finp.Method == "regular" {
+						if isregular(headers, finp.Keyword) {
+							cms = append(cms, finp.Cms)
+						}
+					}
+				}
+				if finp.Location == "title" {
+					if finp.Method == "keyword" {
+						if iskeyword(data.title, finp.Keyword) {
+							cms = append(cms, finp.Cms)
+						}
+					}
+					if finp.Method == "regular" {
+						if isregular(data.title, finp.Keyword) {
+							cms = append(cms, finp.Cms)
+						}
 					}
 				}
 			}
-			if finp.Location == "title" {
-				if finp.Method == "keyword" {
-					if iskeyword(data.title, finp.Keyword) {
-						cms = append(cms, finp.Cms)
-					}
-				}
-				if finp.Method == "regular" {
-					if isregular(data.title, finp.Keyword) {
-						cms = append(cms, finp.Cms)
-					}
-				}
+			cms = RemoveDuplicatesAndEmpty(cms)
+			cmss := strings.Join(cms, ",")
+			out := Outrestul{data.url, cmss, data.server, data.statuscode, data.length, data.title}
+			s.AllResult = append(s.AllResult,out)
+			if len(out.Cms) != 0 {
+				outstr := fmt.Sprintf("[ %s | %s | %s | %d | %d | %s ]", out.Url, out.Cms, out.Server, out.Statuscode, out.Length, out.Title)
+				color.RGBStyleFromString("237,64,35").Println(outstr)
+				s.FocusResult = append(s.FocusResult,out)
+			} else {
+				outstr := fmt.Sprintf("[ %s | %s | %s | %d | %d | %s ]", out.Url, out.Cms, out.Server, out.Statuscode, out.Length, out.Title)
+				fmt.Println(outstr)
 			}
-		}
-		cms = RemoveDuplicatesAndEmpty(cms)
-		cmss := strings.Join(cms, ",")
-		out := Outrestul{data.url, cmss, data.server, data.statuscode, data.length, data.title}
-		s.AllResult = append(s.AllResult,out)
-		if len(out.Cms) != 0 {
-			outstr := fmt.Sprintf("[ %s | %s | %s | %d | %d | %s ]", out.Url, out.Cms, out.Server, out.Statuscode, out.Length, out.Title)
-			color.RGBStyleFromString("237,64,35").Println(outstr)
-			s.FocusResult = append(s.FocusResult,out)
-		} else {
-			outstr := fmt.Sprintf("[ %s | %s | %s | %d | %d | %s ]", out.Url, out.Cms, out.Server, out.Statuscode, out.Length, out.Title)
-			fmt.Println(outstr)
+		default:
+			continue
 		}
 	}
 }
+
