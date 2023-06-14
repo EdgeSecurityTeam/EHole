@@ -17,7 +17,7 @@ func xegexpjs(reg string, resp string) (reslut1 [][]string) {
 }
 
 func Jsjump(str string, url string) []string {
-	regs := []string{`(window|top)\.location\.href = "(.*?)"`, `redirectUrl = "(.*?)"`, `<meta.*?http-equiv=.*?refresh.*?url=(.*?)>`}
+	regs := []string{`(window|top)\.location\.href = ['"](.*?)['"]`, `redirectUrl = ['"](.*?)['"]`, `<meta.*?http-equiv=.*?refresh.*?url=(.*?)>`}
 	var results []string
 	for _, reg := range regs {
 		result1 := xegexpjs(reg, str)
@@ -34,11 +34,10 @@ func Jsjump(str string, url string) []string {
 						if len(str2) == 0 {
 							continue
 						}
-						if str2[:1] == "/" {
-							results = append(results, url+str2)
-						} else {
-							results = append(results, url+"/"+str2)
+						if url[len(url)-1:] != "/" {
+							url += "/"
 						}
+						results = append(results, url+str2)
 					}
 				}
 			} else {

@@ -1,14 +1,199 @@
 {
 	"fingerprint": [{
-		"cms": "seeyon",
+		"cms": "致远OA",
 		"method": "keyword",
 		"location": "body",
 		"keyword": ["/seeyon/USER-DATA/IMAGES/LOGIN/login.gif"]
 	}, {
-		"cms": "seeyon",
+		"cms": "致远OA",
 		"method": "keyword",
 		"location": "body",
 		"keyword": ["/seeyon/common/"]
+	}, {
+		"cms": "通用企业管理软件",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["/cwbase/web/Login.aspx"]
+	}, {
+		"cms": "致远OA M3 Server",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["M3 Server"]
+	}, {
+		"cms": "iDS联网数字标牌管理系统",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["iDS联网数字标牌管理系统"]
+	}, {
+		"cms": "Nexus Repository Manager",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["Nexus Repository Manager"]
+	}, {
+		"cms": "网动统一通信平台(Active UC)",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["网动统一通信平台(Active UC)"]
+	}, {
+		"cms": "禅道 zentao",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["Welcome to use zentao"]
+	}, {
+		"cms": "快云服务器小助手",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["快云服务器助手"]
+	}, {
+		"cms": "禅道 zentao",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["Welcome to zentao"]
+	}, {
+		"cms": "富通天下外贸ERP",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["用户登录_富通天下外贸ERP"]
+	}, {
+		"cms": "海翔D8药业云平台",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["登录海翔"]
+	}, {
+		"cms": "Kibana",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["Kibana"]
+	}, {
+		"cms": "永中在线编辑软件系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["Web Office","img/eio.png"]
+	}, {
+		"cms": "南方数码交易一体化系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["/SouthUIContent/themes/easydropdown.css"]
+	}, {
+		"cms": "朗新天霁人力资源管理系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["hrsoft.com.cn","chkLogindiv","CustStyle"]
+	}, {
+		"cms": "科荣 AIO 运营管理系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["style1/css/ListRange.css","主账套","login.jsp"]
+	}, {
+		"cms": "联达动力医院综合办公管理系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["login.aspx?Method=AJAX&UserName=","Login_Return_XML.aspx"]
+	}, {
+		"cms": "中农信达三资云平台",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["技术支持：北京中农信达信息技术有限公司"]
+	}, {
+		"cms": "电子申请客户端管理系统(EAC)",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["script/css/gwssi.css"]
+	}, {
+		"cms": "青纺联物联查询平台",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["青纺联物联查询平台","Themes/default/login.css"]
+	}, {
+		"cms": "致梦科技-管家婆物联通",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["HtmlPages/Vue/vue.js","GetLoginValidate"]
+	}, {
+		"cms": "广联达 Glodon",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["/ConsoleCommon/Content/weebox.css","广联达"]
+	}, {
+		"cms": "任我行 CRM",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["/Handlers/IdentifyingCode.ashx"]
+	}, {
+		"cms": "广联达 广讯通",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["gtp.standard","JS/gxtAutoLogin.js"]
+	}, {
+		"cms": "智能表综合管理系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["js/jsCore.js","Ajax_Code/Login.ashx","login.css"]
+	}, {
+		"cms": "科德电子智慧水务平台",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["山东科德电子有限公司","J_LoginSub"]
+	}, {
+		"cms": "秦川燃气综合管理系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["系统登录","res/icon/key.png","login"]
+	}, {
+		"cms": "东胜物流软件",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["js/dhtmlxcombo_whp.js","login.aspx"]
+	}, {
+		"cms": "九思 OA 协同办公系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["/jsoa/login.jsp"]
+	}, {
+		"cms": "润申信息企业标准化管理系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["润申信息","企业标准化管理系统","loginForm"]
+	}, {
+		"cms": "银达汇智智慧综合管理平台",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["福州银达云创信息科技有限公司","miniui/crypto/CodeManage.js"]
+	}, {
+		"cms": "同鑫T9eHR信息化管理系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["T9eHR-iconfont","Authentication/Login"]
+	}, {
+		"cms": "NortekControlLineareMerge",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["img/emerge.ico","login_pw"]
+	}, {
+		"cms": "致远OA M1 Server",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["M1-Server"]
+	}, {
+		"cms": "顶讯科技-易宝OA系统",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["欢迎登录易宝OA系统"]
+	}, {
+		"cms": "惠商+管理系统",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["惠商+管理系统"]
+	}, {
+		"cms": "红帆-ioffice OA",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["iOffice.net"]
+	}, {
+		"cms": "管家婆全渠道业务同步中心",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["管家婆全渠道业务同步中心"]
 	}, {
 		"cms": "Spring env",
 		"method": "keyword",
@@ -19,6 +204,21 @@
 		"method": "keyword",
 		"location": "body",
 		"keyword": ["WSY_logo","管理系统 MANAGEMENT SYSTEM"]
+	}, {
+		"cms": "日志易",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["auth/passwordReset","yw-login-","yw-login-logo"]
+	}, {
+		"cms": "思迪数据池管理平台",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["Ajax/Login","思迪","canvas"]
+	}, {
+		"cms": "科迈 RAS",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["科迈RAS","CmxGoUrl.php"]
 	}, {
 		"cms": "Spring env",
 		"method": "keyword",
@@ -39,6 +239,11 @@
 		"method": "keyword",
 		"location": "body",
 		"keyword": ["/console/framework/skins/wlsconsole/images/login_WebLogic_branding.png"]
+	}, {
+		"cms": "TWCMS",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["href=\"/twcms/theme/default/css/global.css"]
 	}, {
 		"cms": "Weblogic",
 		"method": "keyword",
@@ -70,15 +275,130 @@
 		"location": "header",
 		"keyword": ["ecology_JSessionid"]
 	}, {
+		"cms": "天融信VPN设备",
+		"method": "keyword",
+		"location": "header",
+		"keyword": ["topsecsvportalname"]
+	}, {
+		"cms": "PbootCMS",
+		"method": "keyword",
+		"location": "header",
+		"keyword": ["PbootSystem"]
+	}, {
+		"cms": "启明某VPN设备",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["cover_admin.css","SSLVPN LOGIN"]
+	}, {
+		"cms": "天玥运维安全网关",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["css/fw/full.css","js/p/login.js","login"]
+	}, {
+		"cms": "TP-LINK 产品",
+		"method": "keyword",
+		"location": "header",
+		"keyword": ["TP-LINK"]
+	}, {
+		"cms": "Influxdb",
+		"method": "keyword",
+		"location": "header",
+		"keyword": ["X-Influxdb"]
+	}, {
+		"cms": "微宏 OA",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["wh/servlet/MainServer"]
+	}, {
 		"cms": "Shiro",
 		"method": "keyword",
 		"location": "header",
 		"keyword": ["rememberMe="]
 	}, {
+		"cms": "Dreamer CMS-Shiro",
+		"method": "keyword",
+		"location": "header",
+		"keyword": ["dreamer-"]
+	}, {
+		"cms": "Dreamer CMS",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-748565678"]
+	}, {
+		"cms": "慧星自来水营业管理信息系统",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["1704826498"]
+	}, {
+		"cms": "Bonobo Git Server",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-219625874"]
+	}, {
+		"cms": "晶奇科技救助管理系统",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-1185226132"]
+	}, {
+		"cms": "用友BIP 数据应用服务",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["1183274548"]
+	}, {
+		"cms": "流量通 流量平台",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["325583172"]
+	}, {
+		"cms": "北京朗新天霁人力资源系统",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["1143915194"]
+	}, {
+		"cms": "护卫神·主机大师",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["1188645141"]
+	}, {
+		"cms": "友加畅捷U+财会通",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["2049187099"]
+	}, {
+		"cms": "万户ezOFFICE",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-1827521324"]
+	}, {
+		"cms": "信锐物联平台",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["147973611"]
+	}, {
+		"cms": "WiseGrid慧敏应用交付网关",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["910523681"]
+	}, {
+		"cms": "Dreamer CMS",
+		"method": "keyword",
+		"location": "header",
+		"keyword": ["dreamer-cms"]
+	}, {
 		"cms": "Shiro",
 		"method": "keyword",
 		"location": "header",
 		"keyword": ["=deleteMe"]
+	}, {
+		"cms": "重庆佰鼎-佰鼎OA",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["default.aspx","Style/Style.css","Skin2017","TxtUserPwd"]
+	}, {
+		"cms": "PbootCMS",
+		"method": "keyword",
+		"location": "header",
+		"keyword": ["PbootCMS"]
 	}, {
 		"cms": "泛微云桥 e-Bridge",
 		"method": "keyword",
@@ -140,15 +460,50 @@
 		"location": "body",
 		"keyword": ["rsa.js", "commonFunction.js"]
 	}, {
-		"cms": "深信服 waf",
+		"cms": "深信服防火墙数据中心",
 		"method": "keyword",
 		"location": "body",
 		"keyword": ["Redirect to...", "/LogInOut.php"]
+	}, {
+		"cms": "深信服一体化网关 MIG",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["cgi-bin/login.cgi", "/html/wz_tooltip.js"]
+	}, {
+		"cms": "天融信防火墙",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["TOPSEC", "image/aaa.png","username"]
+	}, {
+		"cms": "天融信TopAPP负载均衡系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["TopAPP负载均衡系统", "天融信"]
 	}, {
 		"cms": "网御 vpn",
 		"method": "keyword",
 		"location": "body",
 		"keyword": ["/vpn/common/js/leadsec.js", "/vpn/user/common/custom/auth_home.css"]
+	}, {
+		"cms": "Typecho",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["typecho", "usr/themes"]
+	}, {
+		"cms": "401 登陆认证",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["401 Authorization"]
+	}, {
+		"cms": "唯德科创 IPEasy 知易通",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["_IPEasy知易通"]
+	}, {
+		"cms": "Apache Airflow",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["Airflow - Login"]
 	}, {
 		"cms": "启明星辰天清汉马USG防火墙",
 		"method": "keyword",
@@ -159,6 +514,16 @@
 		"method": "keyword",
 		"location": "body",
 		"keyword": ["sys/ui/extend/theme/default/style/icon.css", "sys/ui/extend/theme/default/style/profile.css"]
+	}, {
+		"cms": "蓝凌 OA",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["蓝凌软件", "App_Themes/Login"]
+	}, {
+		"cms": "飞鱼星上网行为管理",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["css/R1Login.css", "share.ti_username","login_logo"]
 	}, {
 		"cms": "深信服上网行为管理系统",
 		"method": "keyword",
@@ -244,6 +609,11 @@
 		"method": "keyword",
 		"location": "body",
 		"keyword": ["站点创建成功","宝塔"]
+	}, {
+		"cms": "宝塔-BT.cn",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-386189083"]
 	}, {
 		"cms": "禅道",
 		"method": "keyword",
@@ -664,11 +1034,6 @@
 		"method": "faviconhash",
 		"location": "body",
 		"keyword": ["1462981117"]
-	}, {
-		"cms": "ASP.net favicon",
-		"method": "faviconhash",
-		"location": "body",
-		"keyword": ["1772087922"]
 	}, {
 		"cms": "Technicolor",
 		"method": "faviconhash",
@@ -1130,6 +1495,11 @@
 		"location": "body",
 		"keyword": ["1782271534"]
 	}, {
+		"cms": "SOYAL Serial Device Server",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["1777351344"]
+	}, {
 		"cms": "Redmine",
 		"method": "faviconhash",
 		"location": "body",
@@ -1185,7 +1555,7 @@
 		"location": "body",
 		"keyword": ["1876585825"]
 	}, {
-		"cms": "Sangfor",
+		"cms": "Sangfor 应用交付报表系统",
 		"method": "faviconhash",
 		"location": "body",
 		"keyword": ["-1810847295"]
@@ -1765,7 +2135,7 @@
 		"location": "body",
 		"keyword": ["2055322029"]
 	}, {
-		"cms": "Ruijie Networks (Login)",
+		"cms": "锐捷 Ruijie Networks",
 		"method": "faviconhash",
 		"location": "body",
 		"keyword": ["-692947551"]
@@ -3035,6 +3405,11 @@
 		"location": "body",
 		"keyword": ["DBAPPSecurity","安恒云堡垒机"]
 	}, {
+		"cms": "安恒明御安全网关",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["明御安全网关"]
+	}, {
 		"cms": "Citrix 虚拟桌面",
 		"method": "faviconhash",
 		"location": "body",
@@ -3155,6 +3530,11 @@
 	    "location": "body",
 	    "keyword": ["终端安全系统","setup/kanclient.exe","iepngfix/iepngfix_tilebg.js"]
 	 }, {
+	    "cms": "YzmCMS",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["YzmCMS","yzm-common.css"]
+	 }, {
 	    "cms": "微擎 - 公众平台自助引擎",
 	    "method": "keyword",
 	    "location": "body",
@@ -3225,6 +3605,16 @@
 	    "location": "body",
 	    "keyword": ["eYou","q=login","tpl/user"]
 	 }, {
+	    "cms": "亿邮邮件系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["eYou","q=help","tpl/user"]
+	 }, {
+	    "cms": "XAMPP 默认页面",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["Welcome to XAMPP"]
+	 }, {
 	    "cms": "网神下一代极速防火墙",
 	    "method": "keyword",
 	    "location": "body",
@@ -3234,6 +3624,96 @@
 	    "method": "keyword",
 	    "location": "body",
 	    "keyword": ["systemAction","zt_webframe","login"]
+	 }, {
+	    "cms": "新软科技-极通EWEBS",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["N-soft","ClientDownload.xgi"]
+	 }, {
+	    "cms": "Igenus邮件系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["iGENUS","login.php","language"]
+	 }, {
+	    "cms": "图创图书馆集群管理系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["interlib/common/","self.location.href"]
+	 }, {
+	    "cms": "华天动力OA",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["OAapp/WebObjects/OAapp.woa","window.location"]
+	 }, {
+	    "cms": "JEECMS",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["/r/cms/www","shortcut icon"]
+	 }, {
+	    "cms": "Apache Hadoop",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["static/hadoop-st.png","Cluster"]
+	 }, {
+	    "cms": "TamronOS IPTV系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["TamronOS","loginbox","tamronos.com"]
+	 }, {
+	    "cms": "锐捷 RG-EW1200G",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["锐捷","/static/img/title.ico","/js/app"]
+	 }, {
+	    "cms": "H3C Web网管",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["webui","Web网管用户登录","china_logo.jpg"]
+	 }, {
+	    "cms": "H3C ER6300G2",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["ER6300G2","h3c.com","login"]
+	 }, {
+	    "cms": "H3C ER3100",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["ER3100","h3c.com","login"]
+	 }, {
+	    "cms": "SDCMS神盾内容管理系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["sdcms","login"]
+	 }, {
+	    "cms": "锐捷 SSLVPN",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["SSLVPN","rjsslvpn_encookie","login"]
+	 }, {
+	    "cms": "天迈科技网络视频监控系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["jsessionid","天迈科技","网络视频监控系统"]
+	 }, {
+	    "cms": "WIFISKY-7层流控路由器",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["WIFISKY","adminusr","深圳市领空技术"]
+	 }, {
+	    "cms": "后台",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["后台"]
+	 }, {
+	    "cms": "MinIO",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["MinIO Browser"]
+	 }, {
+	    "cms": "Consul by HashiCorp",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["Consul"]
 	 }, {
 	    "cms": "TVT 公司产品",
 	    "method": "faviconhash",
@@ -3245,9 +3725,1069 @@
 	    "location": "body",
 	    "keyword": ["1708240621"]
 	 }, {
-	    "cms": "WinWebMail邮件系统",
+	    "cms": "锐捷 NBR 路由器",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["738520282"]
+	 }, {
+	    "cms": "二级域名分发系统",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["-2055778861"]
+	 }, {
+	    "cms": "致远 Analytics Cloud 分析云",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["410106848"]
+	 }, {
+	    "cms": "景云网络防病毒系统",
 	    "method": "keyword",
 	    "location": "body",
-	    "keyword": ["images/hrefbt.css","WinWebMail"]
-	 }]
+	    "keyword": ["styles/images/logo.png","login_form","防病毒"]
+	 }, {
+	    "cms": "VA 虚拟应用管理平台",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["Res/Images/logo_va.png","panel_login"]
+	 }, {
+	    "cms": "用友 NC Cloud",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["platform/pub/welcome.do"]
+	 }, {
+	    "cms": "GitBook",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["content=\"GitBook","gitbook"]
+	 }, {
+	    "cms": "Outlook",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["owa/auth","Outlook","logonDiv"]
+	 }, {
+	    "cms": "万户网络ezEIP",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["Powered By wanhu - www.wanhu.com.cn","ezEip"]
+	 }, {
+	    "cms": "海康威视联网网关",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["独立运行(无平台)","login_form"]
+	 }, {
+	    "cms": "阿姆瑞特智能DNS",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["DNS","main.php?mod=member","DNS_"]
+	 }, {
+	    "cms": "PHPOA 协同办公软件",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["login.php","提示信息","showMsg"]
+	 }, {
+	    "cms": "明致 OA",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["1591287747"]
+	 }, {
+	    "cms": "JBoss EAP",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["title>EAP","eap.css","JBoss"]
+	 }, {
+	    "cms": "若依",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["ruoyi","若依","login"]
+	 }, {
+	    "cms": "万户 OA",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["defaultroot","Logon!logon.action","domainAccount"]
+	 }, {
+	    "cms": "全息AI弱电网络综合运维平台",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["全息AI","g_is_hk","login"]
+	 }, {
+	    "cms": "天融信产品",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["<TITLE>Web User Login","loginCheck"]
+	 }, {
+	    "cms": "天融信VPN",
+	    "method": "keyword",
+	    "location": "header",
+	    "keyword": ["topsecsvportalstyle"]
+	 }, {
+	    "cms": "天融信WEB应用安全防护系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["module=login","topsec","login"]
+	 }, {
+	    "cms": "天融信 Reporter",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["Login @ Reporter","topsec","login"]
+	 }, {
+	    "cms": "易瑞授权访问系统",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["易瑞授权访问系统"]
+	 }, {
+	    "cms": "E-Tiller",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["北京勤云","reader/view_abstract.aspx"]
+	 }, {
+	    "cms": "FangMail",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["fangmail/default/css/em_css.css","fangmail/cgi/index.cgi"]
+	 }, {
+	    "cms": "Tencent-Exmail",
+	    "method": "keyword",
+	    "location": "header",
+	    "keyword": ["ssl_edition=mail.qq.com"]
+	 }, {
+	    "cms": "Tencent-Exmail",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["cgi-bin/getinvestigate?flowid=","cgi-bin/bizmail_portal"]
+	 }, {
+	    "cms": "Jira",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["jira.webresources","com.atlassian.plugins"]
+	 }, {
+	    "cms": "FishEye",
+	    "method": "keyword",
+	    "location": "header",
+	    "keyword": ["FESESSIONID="]
+	 }, {
+	    "cms": "天玥网络安全审计系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["天玥","venustech","func_login"]
+	 }, {
+	    "cms": "金航网上阅卷系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["金航","jsyj","衡水金航"]
+	 }, {
+	    "cms": "科脉·蛙笑在线商业管理软件",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["Kemai","Login.aspx","科脉"]
+	 }, {
+	    "cms": "朗拓健康医院管理系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["static/mq/yaoxun_pbm_im.js","js/app."]
+	 }, {
+	    "cms": "品德科技医学在线考试系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["考试系统","品德","login.aspx"]
+	 }, {
+	    "cms": "SPON IP网络对讲广播系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["spon_base64.js","login"]
+	 }, {
+	    "cms": "NVS3000综合视频监控平台",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["视频监控","NVS3000综合","login"]
+	 }, {
+	    "cms": "银达汇智 智慧综合管理平台",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["miniui","Help ?","main.aspx"]
+	 }, {
+	    "cms": "云信通短信运营管理平台",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["短信","Simpla","chklogin.aspx"]
+	 }, {
+	    "cms": "AceNet 驰崴防火墙",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["Technology","login_commit.php"]
+	 }, {
+	    "cms": "Teleport 堡垒机",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["TELEPORT","teleport.js","login-account"]
+	 }, {
+	    "cms": "天融信-上网行为管理系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["images/logo3.gif","dkey_activex_download.php","login_commit.php"]
+	 }, {
+	    "cms": "Yii框架",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["yii.js","yii."]
+	 }, {
+	    "cms": "PHP",
+	    "method": "keyword",
+	    "location": "header",
+	    "keyword": ["PHP/"]
+	 }, {
+	    "cms": "WPS 部署可视化平台",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["WPS 部署可视化平台"]
+	 }, {
+	    "cms": "phpstydy Windows",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["phpstudy for windows"]
+	 }, {
+	    "cms": "有WAF",
+	    "method": "keyword",
+	    "location": "header",
+	    "keyword": ["WAF/"]
+	 }, {
+	    "cms": "移动云 WAF",
+	    "method": "keyword",
+	    "location": "header",
+	    "keyword": ["CloudWAF"]
+	 }, {
+	    "cms": "epoint政务服务系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["epoint-web-zwdt"]
+	 }, {
+	    "cms": "奥联通讯管理平台",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["-1356973161"]
+	 }, {
+	    "cms": "百傲瑞达",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["-1169502834"]
+	 }, {
+	    "cms": "明源云ERP",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["-626335361"]
+	 }, {
+	    "cms": "天智智慧医院综合质量监管平台",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["1986460035"]
+	 }, {
+	    "cms": "明源云ERP",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["明源云ERP"]
+	 }, {
+	    "cms": "Minio Browser",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["Minio Browser"]
+	 }, {
+	    "cms": "管理后台登录",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["管理员","登录"]
+	 }, {
+	    "cms": "360天擎",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["360天擎"]
+	 }, {
+	    "cms": "博华网龙信息安全一体机",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["博华网龙信息安全一体机"]
+	 }, {
+	    "cms": "LNMP一键安装包默认页面",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["LNMP一键安装包"]
+	 }, {
+	    "cms": "HDWiki",
+	    "method": "keyword",
+	    "location": "header",
+	    "keyword": ["hd_sid="]
+	 }, {
+	    "cms": "深圳锐明行驶记录仪",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["登录您的MDVR"]
+	 }, {
+	    "cms": "Drupal",
+	    "method": "keyword",
+	    "location": "header",
+	    "keyword": ["drupal"]
+	 }, {
+	    "cms": "Huawei user-login",
+	    "method": "keyword",
+	    "location": "header",
+	    "keyword": ["Huawei Auth-Http"]
+	 }, {
+	    "cms": "Prometheus Server",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["Prometheus Time Series Collection and Processing Server"]
+	 }, {
+	    "cms": "Kubernetes",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["Kubernetes Dashboard"]
+	 }, {
+	    "cms": "easypanel",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["easypanel","vhost","login"]
+	 }, {
+	    "cms": "VMware Horizon",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["VMware","ui-page","portal/favicon"]
+	 }, {
+	    "cms": "明源云 ERP",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["PubPlatform","明源云","LoginHandler"]
+	 }, {
+	    "cms": "VMware Horizon",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["VMware Horizon"]
+	 }, {
+	    "cms": "迪普VPN",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["dptech_ssl","sslvpn","loginAPI.js"]
+	 }, {
+	    "cms": "OpenShift Web Console",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["OpenShift Web Console"]
+	 }, {
+	    "cms": "好视通",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["fsmeeting","loginCheck.do","app.result"]
+	 }, {
+	    "cms": "碧海云盒",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["碧海云盒","mt_login","login.php"]
+	 }, {
+	    "cms": "PhpWind",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["content=\"phpwind"]
+	 }, {
+	    "cms": "CmsEasy",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["content=\"CmsEasy"]
+	 }, {
+	    "cms": "EmpireCMS",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["Powered by EmpireCMS"]
+	 }, {
+	    "cms": "Emlog",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["content=\"emlog\""]
+	 }, {
+	    "cms": "ECShop",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["content=\"ECSHOP"]
+	 }, {
+	    "cms": "大汉版通-Hanweb-system",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["大汉版通","大汉网络","hanweb.com' style='display:none'"]
+	 }, {
+	    "cms": "ESPCMS",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["powered by espcms"]
+	 }, {
+	    "cms": "KesionCMS",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["ks_inc/common.js","KesionCMS"]
+	 }, {
+	    "cms": "东营金石软件",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["aspNetHidden","loginselect","txtLoginName"]
+	 }, {
+	    "cms": "皓峰防火墙",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["皓峰防火墙系统登录"]
+	 }, {
+	    "cms": "CMSTop",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["css/cmstop-common.css","js/cmstop-common.js"]
+	 }, {
+	    "cms": "华域Reporter",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["reporter","login","action.php"]
+	 }, {
+	    "cms": "智邦国际-企业管理软件",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["index2.asp","update/exec.asp","images/full.gif"]
+	 }, {
+	    "cms": "电信网关配置管理系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["<TITLE>系统登录","login.php","img/login_bg3.png","360.cn"]
+	 }, {
+	    "cms": "方配在线考试系统(FPExam)",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["exam/logo/favicon.ico","fangpage"]
+	 }, {
+	    "cms": "Spring Eureka",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["<title>Eureka</title>","eureka"]
+	 }, {
+	    "cms": "迪普 SSLVPN",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["DPSSLVPN","SSL VPN Service","login"]
+	 }, {
+	    "cms": "Grafana",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["<title>Grafana</title>"]
+	 }, {
+	    "cms": "百卓byzoro-安全网关",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["北京百卓","PatrolFlow","login.php"]
+	 }, {
+	    "cms": "ENESYS",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["dwr/interface/WebContextUtil.js"]
+	 }, {
+	    "cms": "KVM_创梦云计算管理系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["<title>KVM_创梦云计算管理系统</title>"]
+	 }, {
+	    "cms": "任我行-管家婆分销ERP",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["分销ERP","txt_DbName","DownloadDriver.asp"]
+	 }, {
+	    "cms": "小黄豆CRM",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["xhdcrm","JS/XHD.js","login.check.xhd"]
+	 }, {
+	    "cms": "Nnetgear 路由器",
+	    "method": "keyword",
+	    "location": "header",
+	    "keyword": ["NETGEAR"]
+	 }, {
+	    "cms": "Metabase",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["Metabase"]
+	 }, {
+	    "cms": "4images",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["Powered by <b>4images","4homepages"]
+	 }, {
+	    "cms": "Finecms",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["content=\"FineCMS"]
+	 }, {
+	    "cms": "NUUO 摄像头",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["Network Video Recorder Login"]
+	 }, {
+	    "cms": "Apache ShenYu",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["id=\"httpPath","th:text=\"${domain}"]
+	 }, {
+	    "cms": "Solar 网络管理系统",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["-1871496583"]
+	 }, {
+	    "cms": "畅捷CRM",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["-1068428644"]
+	 }, {
+	    "cms": "悟空CRM",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["872805507"]
+	 }, {
+	    "cms": "用友GRP-U8 新政府会计制度专版",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["-299520369"]
+	 }, {
+	    "cms": "e-cology 运维管理平台",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["-384583337"]
+	 }, {
+	    "cms": "瑞友天翼－应用虚拟化系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["DownLoad.XGI","realor.cn","dvLogin"]
+	 }, {
+	    "cms": "H3C SecPath 运维审计系统",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["1776863739"]
+	 }, {
+	    "cms": "信呼 OA",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["1652488516"]
+	 }, {
+	    "cms": "MeterSphere",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["1023469568"]
+	 }, {
+	    "cms": "H2 Database Console",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["-525659379"]
+	 }, {
+	    "cms": "天融信设备",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["-2019013898"]
+	 }, {
+	    "cms": "慧林ICP/iP备案系统",
+	    "method": "faviconhash",
+	    "location": "body",
+	    "keyword": ["-556918553"]
+	 }, {
+	    "cms": "飞鱼星路由器/行为管理",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["content=\"0.2;","/home/login.html"]
+	 }, {
+	    "cms": "化视私云CDN直播加速服务器",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["img/dl.gif","华视美达","login.php"]
+	 }, {
+	    "cms": "冰峰网络 iceflow",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["Web 配置中心","/images/splash.jpg"]
+	 }, {
+	    "cms": "华夏 ERP",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["jshERP-boot","platformConfig"]
+	 }, {
+	    "cms": "78 OA",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["/resource/javascript/system/runtime.min.js","password"]
+	 }, {
+	    "cms": "EnterCRM",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["杭州恩软","Ent.base.js"]
+	 }, {
+	    "cms": "ITC-CMS",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["/mt_res_v3/js/common/common.js","<title>CMS"]
+	 }, {
+	    "cms": "Panabit-Panalog",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["img/logo.gif","Maintain","unamexx","img/12.png"]
+	 }, {
+	    "cms": "用友-畅捷通OEM",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["GNRemote.dll","Web_sc/login.gn"]
+	 }, {
+	    "cms": "华为AR Web管理平台",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["Huawei","simple/style/default/image/login.png","simple/view/ossn.html"]
+	 }, {
+	    "cms": "铭飞 MCMS",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["ms.js","ms.http.js","plugins"]
+	 }, {
+	    "cms": "向日葵-SunLogin",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["{\"success\":false,\"msg\":\"Verification failure\"}"]
+	 }, {
+	    "cms": "GROWATT 系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["login","v3/js/odm/odm.js"]
+	 }, {
+	    "cms": "锐捷防火墙",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["下一代防火墙","锐捷网络"]
+	 }, {
+	    "cms": "天融信应用交付系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["TopApp-AD"]
+	 }, {
+	    "cms": "慧林信息安全管理系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["用户管理登录","login","images/zh-CN/login_03.gif"]
+	 }, {
+	    "cms": "华为云桌面",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["Desktop@FusionAccess","/webui/"]
+	 }, {
+	    "cms": "齐治堡垒机",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["fp_download","login.php","logo-icon-ico72.png"]
+	 }, {
+	    "cms": "TurboMail 邮件系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["TurboMail","mailmain?type=login"]
+	 }, {
+	    "cms": "安恒数据大脑API网关",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["mssp-fe","/static/imgs/logo.png"]
+	 }, {
+	    "cms": "山石网科云数据库审计与防护系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["#!/dbSummary","/lib/colResizable/"]
+	 }, {
+	    "cms": "青年软件OA",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["/Content/qrlib/ligerUI/skins/"]
+	 }, {
+	    "cms": "金山终端安全管理系统",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["iepngfix/iepngfix_tilebg.js","mysqlStat"]
+	 }, {
+	    "cms": "多媒体信息发布系统",
+	    "method": "keyword",
+	    "location": "header",
+	    "keyword": ["HowFor Web"]
+	 }, {
+	    "cms": "亿赛通(DLP)",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["CDGServer3","welcomebg.jpg"]
+	 }, {
+	    "cms": "百卓 Smart 多业务安全网关",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["writeCustomBgImg.jsp","baseajax","LoginLogo"]
+	 }, {
+	    "cms": "中远麒麟堡垒机",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["admin.php","controller=admin_index&action=login"]
+	 }, {
+	    "cms": "移动云&绿盟日志审计系统-log4j",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["/pisces/login/"]
+	 }, {
+	    "cms": "Apache APISIX",
+	    "method": "keyword",
+	    "location": "body",
+	    "keyword": ["{\"error_msg\":\"404 Route Not Found\"}"]
+	 }, {
+	    "cms": "网康科技·互联网控制网关",
+	    "method": "keyword",
+	    "location": "title",
+	    "keyword": ["网康科技·互联网控制网关"]
+	 }, {
+		"cms": "飞思网巡 IT运维系统",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["1622043013"]
+	}, {
+		"cms": "Richmail 邮件系统",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["RichMail"]
+	}, {
+		"cms": "Richmail 邮件系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["0;url=/webmail/"]
+	}, {
+		"cms": "Richmail 邮件系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["richmail.config.js","login"]
+	}, {
+		"cms": "字节数联云桌面系统",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-1142582922"]
+	}, {
+		"cms": "智跃HR人力资源管理系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["images/ZY.LOGO.64.png"]
+	}, {
+		"cms": "启迪国信 UEM管理平台",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["#commonTip","css/icomoon","login","wwLogin"]
+	}, {
+		"cms": "金万维异速联",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["GNRemote.dll?GNFunction="]
+	}, {
+		"cms": "JieLink+智能终端操作平台",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["JieLink<sup>+</sup>"]
+	}, {
+		"cms": "宏景eHR人力资源信息管理系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["人力资源信息管理系统","hrlogon"]
+	}, {
+		"cms": "禾匠点企来客服系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["const _scriptUrl","login_logo"]
+	}, {
+		"cms": "iXCache",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["iXCache","/login/userverify.cgi"]
+	}, {
+		"cms": "爱信诺开票服务器",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["aisino.kps.console"]
+	}, {
+		"cms": "税控服务器管理系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["sys/login.do","resources/css/login_yzm.css"]
+	}, {
+		"cms": "天擎",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["index/logo","天擎</title>"]
+	}, {
+		"cms": "小鱼易连云视讯管理平台",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["font_1957344_lqkodjqdbl.css"]
+	}, {
+		"cms": "小鱼易连云视讯管理平台",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["static_source/localcdn/webrtc/web/favicon.ico"]
+	}, {
+		"cms": "厦门快普",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["jKPM6","WebResource.axd"]
+	}, {
+		"cms": "iDste融合系统支撑平台",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["iDste融合系统支撑平台"]
+	}, {
+		"cms": "大华安防 DSS",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["User","<meta http-equiv=\"refresh\" content=\"1;URL='/admin'\"/>"]
+	}, {
+		"cms": "NSFOCUS 绿盟安全设备",
+		"method": "keyword",
+		"location": "header",
+		"keyword": ["NSFOCUS"]
+	}, {
+		"cms": "迪浪云OA",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-179985729"]
+	}, {
+		"cms": "Nexus Repository Manager",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["1323738809"]
+	}, {
+		"cms": "金睛云华高级威胁检测系统",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["1747722638"]
+	}, {
+		"cms": "VMware Workspace ONE Access",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-1250474341"]
+	}, {
+		"cms": "网防G01",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-968234332"]
+	}, {
+		"cms": "Gitblit",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["gitblt-favicon.png","gitblit"]
+	}, {
+		"cms": "H3C ER8300G2-X",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["H3C","vld.bmp","dis_login","ER8300G2"]
+	}, {
+		"cms": "锐捷交换机-睿易",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["cgi-bin/luci","#f47f3e"]
+	}, {
+		"cms": "H3C/安博通/任子行/OEM系列安全产品",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["webui/js/jquerylib/jquery-1.7.2.min.js"]
+	}, {
+		"cms": "明源云 ERP",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["#153290","明源软件"]
+	}, {
+		"cms": "IP-guard",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["IP-guard","sign/login"]
+	}, {
+		"cms": "宁盾一体化安全认证平台",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["am/ndkey.ico","zhLanguagePng"]
+	}, {
+		"cms": "东华医疗协同办公系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["extcomponent/security/login.jsp","login_dhc"]
+	}, {
+		"cms": "安宁电子邮件系统　AnyMacro Mail",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["anymacro","passre.php"]
+	}, {
+		"cms": "海康威视综合安防平台",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["dist/jquery.js","home/locationIndex.action"]
+	}, {
+		"cms": "海纳CMS-HituxCMS",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["Powered By HituxCMS","ServiceCenter.js"]
+	}, {
+		"cms": "酒店智慧营销IPTV系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["xsiptvp","IPTV"]
+	}, {
+		"cms": "朗驰欣创-视频监控",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["Installplug.exe","NVSID"]
+	}, {
+		"cms": "大华-智能物联综合管理平台",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["static/qwebchannel.js","moment"]
+	}, {
+		"cms": "方正翔宇",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["e5style/login1.css","e5workspace/security/captcha.do"]
+	}, {
+		"cms": "金蝶 EAS",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["eassso","portalClientHelper.jsp"]
+	}, {
+		"cms": "极通 EWEBS 应用虚拟化",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["NewSoft","xajax05/xajax_js/xajax_core.js"]
+	}, {
+		"cms": "时空智友",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["login.jsp?login","登录"]
+	}, {
+		"cms": "康通电子云广播系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["static/download/JSET99Setup.exe"]
+	}, {
+		"cms": "xxl-job",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["/static/adminlte/dist/css/AdminLTE.min.css","bower_components/PACE/pace.min.js"]
+	}, {
+		"cms": "海康综合安防管理平台",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["综合安防管理平台"]
+	}, {
+		"cms": "53BK数字报刊系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["/Comja/"]
+	}, {
+		"cms": "慧点科技 OA 协同办公系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["/dojo/smartdot/css/dojo_smartdot.css"]
+	}, {
+		"cms": "Teleport 堡垒机",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["teleport.js","login-type-oath","bind-oath"]
+	}, {
+		"cms": "V2 Conference 视频会议系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["window.location.href=\"/Conf/index.jsp\""]
+	}, {
+		"cms": "和欣控制(Hysine) Webtalk 系统",
+		"method": "keyword",
+		"location": "body",
+		"keyword": ["_webtalk/_cur/loginA.php","WEBTALK"]
+	}, {
+		"cms": "Analytics Cloud 分析云",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["410106848"]
+	}, {
+		"cms": "明源云MIP集成平台",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-834208471"]
+	}, {
+		"cms": "MapGIS Server Manager",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-252149748"]
+	}, {
+		"cms": "金钟集团智能物流管理系统",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-364449966"]
+	}, {
+		"cms": "海康威视综合安防管理平台",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-808437027"]
+	}, {
+		"cms": "即会通企业版(LiveUC)|视频会议",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-637931821"]
+	}, {
+		"cms": "泛微emp-移动管理平台",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["2062026853"]
+	}, {
+		"cms": "锐捷 SSL VPN",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-1525950034"]
+	}, {
+		"cms": "华测监测预警系统",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-628229493"]
+	}, {
+		"cms": "35企业邮箱系统",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["1676919780"]
+	}, {
+		"cms": "指挥调度平台",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-1971504131"]
+	}, {
+		"cms": "FE业务协作平台",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-391577146"]
+	}, {
+		"cms": "Elib 图书馆集群管理系统",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["478149598"]
+	}, {
+		"cms": "VMware Horizon",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["1182206475"]
+	}, {
+		"cms": "银达汇智智慧综合管理平台",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["1170487960"]
+	}, {
+		"cms": "迈普多业务融合网关",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-1234665500"]
+	}, {
+		"cms": "奇安信自动化渗透测试系统",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-747580443"]
+	}, {
+		"cms": "红海eHR人力资源管理系统",
+		"method": "faviconhash",
+		"location": "body",
+		"keyword": ["-1015496453"]
+	}, {
+		"cms": "MobileIron --Log4j",
+		"method": "keyword",
+		"location": "title",
+		"keyword": ["MobileIron User Portal: Sign In"]
+	}]
 }
