@@ -920,11 +920,6 @@
 		"location": "body",
 		"keyword": ["-219752612"]
 	}, {
-		"cms": "fortinet-forticlient",
-		"method": "faviconhash",
-		"location": "body",
-		"keyword": ["945408572"]
-	}, {
 		"cms": "Ubiquiti – AirOS",
 		"method": "faviconhash",
 		"location": "body",
@@ -960,11 +955,6 @@
 		"location": "body",
 		"keyword": ["708578229"]
 	}, {
-		"cms": "Plesk",
-		"method": "faviconhash",
-		"location": "body",
-		"keyword": ["-134375033"]
-	}, {
 		"cms": "Dahua Storm (IP Camera)",
 		"method": "faviconhash",
 		"location": "body",
@@ -984,11 +974,6 @@
 		"method": "faviconhash",
 		"location": "body",
 		"keyword": ["-325082670"]
-	}, {
-		"cms": "Plesk",
-		"method": "faviconhash",
-		"location": "body",
-		"keyword": ["-1050786453"]
 	}, {
 		"cms": "TilginAB (HomeGateway)",
 		"method": "faviconhash",
@@ -1094,11 +1079,6 @@
 		"method": "faviconhash",
 		"location": "body",
 		"keyword": ["-1119613926"]
-	}, {
-		"cms": "Sangfor",
-		"method": "faviconhash",
-		"location": "body",
-		"keyword": ["123821839"]
 	}, {
 		"cms": "ZTE Corporation (Gateway/Appliance)",
 		"method": "faviconhash",
@@ -3075,11 +3055,6 @@
 		"location": "body",
 		"keyword": ["-1474875778"]
 	}, {
-		"cms": "Netcom Technology",
-		"method": "faviconhash",
-		"location": "body",
-		"keyword": ["5471989"]
-	}, {
 		"cms": "CradlePoint",
 		"method": "faviconhash",
 		"location": "body",
@@ -3715,11 +3690,6 @@
 	    "location": "title",
 	    "keyword": ["Consul"]
 	 }, {
-	    "cms": "TVT 公司产品",
-	    "method": "faviconhash",
-	    "location": "body",
-	    "keyword": ["492290497"]
-	 }, {
 	    "cms": "资产灯塔系统",
 	    "method": "faviconhash",
 	    "location": "body",
@@ -4058,7 +4028,7 @@
 	    "cms": "VMware Horizon",
 	    "method": "keyword",
 	    "location": "title",
-	    "keyword": ["VMware Horizon"]
+	    "keyword": ["VMware Horizon"]
 	 }, {
 	    "cms": "迪普VPN",
 	    "method": "keyword",
@@ -4694,11 +4664,6 @@
 		"method": "keyword",
 		"location": "body",
 		"keyword": ["_webtalk/_cur/loginA.php","WEBTALK"]
-	}, {
-		"cms": "Analytics Cloud 分析云",
-		"method": "faviconhash",
-		"location": "body",
-		"keyword": ["410106848"]
 	}, {
 		"cms": "明源云MIP集成平台",
 		"method": "faviconhash",
